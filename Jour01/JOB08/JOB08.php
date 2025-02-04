@@ -9,29 +9,30 @@ class Produit{
     private $prixHT;
     private $TVA;
 
-    function __construct($nom = 0, $prixHT = 0, $TVA = 0){
+    public function __construct($nom = 0, $prixHT = 0, $TVA = 0){
         $this->nom = $nom;
         $this->prixHT = $prixHT;
         $this->TVA = $TVA;
     }
 
-    function CalculerPrixTTC(){
+    // Méthodes
+    public function CalculerPrixTTC(){
         return $this -> prixHT * (1 + $this -> TVA / 100);
     }
-    function afficher(){
+    public function afficher(){
         return "Le prix TTC de " . $this -> nom . " est de " . $this -> CalculerPrixTTC() . "€ sans la TVA le prix est de " . $this -> prixHT . "€";
     }
 
-    function modifierNom($nouveauNom){
+    public function modifierNom($nouveauNom){
         return $this -> nom = $nouveauNom;
     }
-    function modifierPrixHT($nouveauPrixHT){
+    public function modifierPrixHT($nouveauPrixHT){
         return $this -> prixHT = $nouveauPrixHT;
     }
-    function afficherNom(){
+    public function afficherNom(){
         return $this -> nom;
     }
-    function afficherTVA(){
+    public function afficherTVA(){
         return $this -> TVA;
     }
 }
@@ -58,7 +59,6 @@ echo "<br>";
 echo $produit1->afficherNom();
 echo "<br>";
 echo $produit1->afficherTVA() . "%";
-
 
 
 ?>

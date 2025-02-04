@@ -6,28 +6,28 @@ class Animal {
     private $prenom;
 
     // Constructeur pour initialiser les propriétés
-    function __construct($age = 0, $prenom = "") {
+    public function __construct($age = 0, $prenom = "") {
         $this->age = $age;
         $this->prenom = $prenom;
     }
 
     // Méthode pour afficher l'âge
-    function afficherAge() {
+    public function afficherAge() {
         return $this->age;
     }
 
     // Méthode pour vieillir l'animal
-    function vieillir() {
+    public function vieillir() {
         return $this->age++;
     }
 
     // Méthode pour nommer l'animal
-    function nommer($prenom) {
+    public function nommer($prenom) {
         return $this->prenom = $prenom;
     }
 
     // Méthode pour afficher le nom
-    function afficherNom() {
+    public function afficherNom() {
         return $this->prenom;
     }
 }
