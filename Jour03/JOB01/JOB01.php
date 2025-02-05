@@ -5,6 +5,7 @@ class Personne{
 
     protected $age;
 
+    // Constructeur
     public function __construct($age = 14){
         $this->age = $age;
     }
