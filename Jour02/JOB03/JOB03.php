@@ -92,9 +92,4 @@ try {
     echo 'Erreur : ',  $e->getMessage(), "\n";
 }
 
-<<<<<<< HEAD
 ?>
-=======
-
-?>
->>>>>>> 6537424eceab876e853937e7d5ef312f7fc20909
