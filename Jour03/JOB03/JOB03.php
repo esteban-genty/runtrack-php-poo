@@ -43,7 +43,7 @@ class Parallelepipede extends Rectangle{
     
     private $hauteur;
 
-    function __construct($longueur, $largeur, $hauteur){
+    public function __construct($longueur, $largeur, $hauteur){
         $this->longueur = $longueur;
         $this->largeur = $largeur;
         $this->hauteur = $hauteur;
