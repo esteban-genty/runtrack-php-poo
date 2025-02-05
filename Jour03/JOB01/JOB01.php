@@ -1,5 +1,6 @@
 <?php
 
+// Création d'une classe Personne
 class Personne{
 
     protected $age;
@@ -20,6 +21,7 @@ class Personne{
     }
 }
 
+// Création d'une classe Eleve qui hérite de la classe Personne
 class Eleve extends Personne{
     
     public function allerEnCours(){
@@ -30,6 +32,7 @@ class Eleve extends Personne{
     }
 }
 
+// Création d'une classe Professeur
 class Professeur{
     private $matiereEnseignee;
 
@@ -42,11 +45,12 @@ class Professeur{
     }
 }
 
-
+// Création d'objets
 $personne = new Personne();
 $eleve = new Eleve();
 $professeur = new Professeur("Maths");
 
+// Affichage
 echo "La personne à " . $personne->afficherAge() ." ans </br>";
 $personne->modifierAge(30);
 echo $personne->bonjour();
