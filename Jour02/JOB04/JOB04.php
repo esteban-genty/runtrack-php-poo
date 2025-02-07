@@ -52,7 +52,7 @@ try{
     $etudiant = new Student("John", "Doe", 145);
     echo $etudiant->informations_etudiants() . "</br> </br>";
 
-    $etudiant->add_credits(50);
+    $etudiant->add_credits(60);
     echo $etudiant->informations_etudiants() ."</br> </br>";
 
     $etudiant->add_credits(20);
