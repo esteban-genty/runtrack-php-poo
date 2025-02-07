@@ -8,7 +8,7 @@ class Vehicule {
     private $prix;
 
     public function __construct($marque, $modele, $annee, $prix){
-        $this->marque = $marque;
+            $this->marque = $marque;
             $this->modele = $modele;
             $this->annee = $annee;
             $this->prix = $prix;
