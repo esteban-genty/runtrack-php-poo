@@ -8,14 +8,21 @@ class Vehicule {
     private $prix;
 
     public function __construct($marque, $modele, $annee, $prix){
+<<<<<<< HEAD
             $this->marque = $marque;
             $this->modele = $modele;
             $this->annee = $annee;
             $this->prix = $prix;
+=======
+        $this->marque = $marque;
+        $this->modele = $modele;
+        $this->annee = $annee;
+        $this->prix = $prix;
+>>>>>>> 4eb90a4c99b5ee2ac3cd2cf1fd057d44dc508aa5
     }
 
     public function informationsVehicule(){
-        return "Marque = " . $this-> marque . "</br> Modele = " . $this->modele . "</br> Année =  " . $this->annee . "</br> Prix =  " . $this->prix . " €";
+        return "Marque = " . $this->marque . "</br> Modele = " . $this->modele . "</br> Année =  " . $this->annee . "</br> Prix =  " . $this->prix . " €";
     }
 
     public function demarrer(){
